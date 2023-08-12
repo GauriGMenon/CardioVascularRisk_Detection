@@ -55,7 +55,7 @@ The dataset provided information on over **4,000 patients and included 15 attrib
 3. **Skew transformation** was conducted on skewed data, using *log, square root and boxcox* transformations.
 <p align = "center">
     <figure>
-        <img src="Pics\Glucose_SkewTransformation.png" height="300px" width= "33%"/><img src="Pics\sysBP_BoxCoxTransformation.png" height="300px" width= "33%"/><img src="Pics\TotChol_SkewTransformation.png" height="300px" width= "33%"/> 
+        <img src="Pics\Glucose_SkewTransformation.png" height="300px" width= "20%"/><img src="Pics\sysBP_BoxCoxTransformation.png" height="300px" width= "20%"/><img src="Pics\TotChol_SkewTransformation.png" height="300px" width= "20%"/> 
         <figcaption> Fig: Glucose Skew Transformation(1), sysBP BoxCox Skew Transformation(2), TotChol Skew Transformation(3) </figcaption>
     </figure>
 </p>
@@ -63,7 +63,7 @@ The dataset provided information on over **4,000 patients and included 15 attrib
 
 4. On handling **outliers**, the data was scaled using **StandardScalar** to better fit the classification model. The difference is shown here:
 <p align = "center">
-    <img src="Pics\Feature_Plot.png" height="400px" width= "500px"/> &emsp; &emsp; <img src="Pics\FeatureScaled_Plot.png" height="300px" width= "500px"/>
+    <img src="Pics\Feature_Plot.png" height="400px" width= "300px"/> &emsp; &emsp; <img src="Pics\FeatureScaled_Plot.png" height="300px" width= "300px"/>
 </p>
 
 5. A **multicollinearity graph** gives more insight into the relation between each feature.
