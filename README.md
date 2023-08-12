@@ -54,16 +54,13 @@ The dataset provided information on over **4,000 patients and included 15 attrib
 
 3. **Skew transformation** was conducted on skewed data, using *log, square root and boxcox* transformations.
 <p align = "center">
-    <figure>
-        <img src="Pics\Glucose_SkewTransformation.png" height="300px" width= "20%"/><img src="Pics\sysBP_BoxCoxTransformation.png" height="300px" width= "20%"/><img src="Pics\TotChol_SkewTransformation.png" height="300px" width= "20%"/> 
-        <figcaption> Fig: Glucose Skew Transformation(1), sysBP BoxCox Skew Transformation(2), TotChol Skew Transformation(3) </figcaption>
-    </figure>
+        <img src="Pics\Glucose_SkewTransformation.png" height="250px" width= "250px"/> &emsp; <img src="Pics\sysBP_BoxCoxTransformation.png" height="250px" width= "250px"/> &emsp; <img src="Pics\TotChol_SkewTransformation.png" height="250px" width= "250px"/> 
 </p>
 
 
 4. On handling **outliers**, the data was scaled using **StandardScalar** to better fit the classification model. The difference is shown here:
 <p align = "center">
-    <img src="Pics\Feature_Plot.png" height="400px" width= "300px"/> &emsp; &emsp; <img src="Pics\FeatureScaled_Plot.png" height="300px" width= "300px"/>
+    <img src="Pics\Feature_Plot.png" height="400px" width= "350px"/> &emsp; &emsp; <img src="Pics\FeatureScaled_Plot.png" height="400px" width= "350px"/>
 </p>
 
 5. A **multicollinearity graph** gives more insight into the relation between each feature.
@@ -75,10 +72,7 @@ The dataset provided information on over **4,000 patients and included 15 attrib
 ## Machine Learning Models and Accuracy
 1. I applied **K-Means Clustering algorithm** on the data, restricting no. of clusters to 2, and the results were as follows:
 <p align = "center">
-    <figure>
-        <img src="Pics\sysBP_age_Clustering.png" height="300px" width= "33%"/> <img src="Pics\age_diaBP_Clustering.png" height="300px" width= "33%"/> <img src="Pics\diaBP_heartRate_cluster.png" height="300px" width= "33%"/> 
-        <figcaption> Fig: sysBP/age(1), diaBP/age(2), heartRate/diaBP(3) </figcaption>
-    </figure>
+        <img src="Pics\sysBP_age_Clustering.png" height="300px" width= "250px"/> &emsp; <img src="Pics\age_diaBP_Clustering.png" height="300px" width= "250px"/> &emsp; <img src="Pics\diaBP_heartRate_cluster.png" height="300px" width= "250px"/> 
 </p>
 
 2. Further, I applied **soft clustering** algorithms(returns probabilities of each data point belonging to all k clusters) like **GMM(Gaussian Mixture Model)**. Using a **Decision Tree Classifier** gave the accuracy score 0.78
@@ -95,7 +89,7 @@ The dataset provided information on over **4,000 patients and included 15 attrib
 
 5. PCA analysis showed that we can keep the **first 12 components** and discard the other 6, keeping **>=99.0% of the explained variance**. Variance explained by dimensions(left) and Feature importance Vs Dimensions(right) is shown below. This improved the accuracy score when applied to above algorithms to 0.84.
 <p align = "center">
-    <img src="Pics\ExplainedByVariance_NoOfComponents.png" height="400px" width= "45%"/> &emsp;<img src="Pics\Feature_Importance_vs_Dimensions.png" height="400px" width= "45%"/>
+    <img src="Pics\ExplainedByVariance_NoOfComponents.png" height="350px" width= "45%"/> &emsp;<img src="Pics\Feature_Importance_vs_Dimensions.png" height="350px" width= "45%"/>
 </p>
 
 ## Conclusion
