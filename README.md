@@ -33,7 +33,7 @@ Predict variable (desired target):
 10. **10-year risk of coronary heart disease CHD(binary: “1”, means “Yes”, “0” means “No”)**
 
 <p align = "center">
-    <img src="Pics\Feature_Histogram.png" width="800px"/>
+    <img src="Pics\Feature_HistPlot.png" width="800px"/>
 </p>
 
 ## Data sources
